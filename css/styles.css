@@ -1,0 +1,62 @@
+/* Заголовки #212121 */
+/* Текст #757575 */
+/* синий #2196F3 */
+/* белый #FFFFFF */
+/* Основной фон #FFFFFF */
+/* фон черный #2F303A */
+/* фон серый #F5F4FA */
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --acsent-color: #2196f3;
+  --background-color: #ffffff;
+  --white-color: #ffffff;
+}
+body {
+  color: var(--primary-text-color);
+  background-color: var(--background-color);
+}
+.list {
+  list-style: none;
+}
+/* ЗАГОЛОВОК стилизация */
+/* site-nav стилизация меню */
+.site-nav .link {
+  color: var(--title-text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--acsent-color);
+}
+/* auth-nav */
+.auth-nav .link {
+  color: var(--primary-text-color);
+}
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+  color: var(--acsent-color);
+}
+/* Блок герой */
+.hero {
+  background-color: #2f303a;
+}
+.hero-title {
+  color: var(--white-color);
+}
+.button {
+  color: var(--white-color);
+  background-color: var(--acsent-color);
+}
+/* <!-- Особенности --> */
+.features .title {
+  color: var(--title-text-color);
+}
+.section-title {
+  color: var(--title-text-color);
+}
+/* <!-- Чем мы занимаемся --> */
+
+/* <!-- Наша команда --> */
+.tem-list .title {
+  color: var(--title-text-color);
+}
