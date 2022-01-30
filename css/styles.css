@@ -9,8 +9,10 @@
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --acsent-color: #2196f3;
+  --black-bgc-color: #2f303a;
+  --gray-bcg-color: #f5f4fa;
   --background-color: #ffffff;
-  --white-color: #ffffff;
+  --text-white-color: #ffffff;
 }
 body {
   color: var(--primary-text-color);
@@ -19,8 +21,21 @@ body {
 .list {
   list-style: none;
 }
+.link,
+.logo {
+  text-decoration: none;
+}
 /* ЗАГОЛОВОК стилизация */
 /* site-nav стилизация меню */
+.logo {
+  color: var(--acsent-color);
+}
+.logo-footer {
+  color: var(--text-white-color);
+}
+.logo-nav {
+  color: var(--title-text-color);
+}
 .site-nav .link {
   color: var(--title-text-color);
 }
@@ -28,23 +43,23 @@ body {
 .site-nav .link:focus {
   color: var(--acsent-color);
 }
-/* auth-nav */
-.auth-nav .link {
+/* address-nav */
+.address-nav .link {
   color: var(--primary-text-color);
 }
-.auth-nav .link:hover,
-.auth-nav .link:focus {
+.address-nav .link:hover,
+.address-nav .link:focus {
   color: var(--acsent-color);
 }
 /* Блок герой */
 .hero {
-  background-color: #2f303a;
+  background-color: var(--black-bgc-color);
 }
 .hero-title {
-  color: var(--white-color);
+  color: var(--text-white-color);
 }
 .button {
-  color: var(--white-color);
+  color: var(--text-white-color);
   background-color: var(--acsent-color);
 }
 /* <!-- Особенности --> */
@@ -57,6 +72,25 @@ body {
 /* <!-- Чем мы занимаемся --> */
 
 /* <!-- Наша команда --> */
-.tem-list .title {
+.section.team {
+  background-color: var(--gray-bcg-color);
+}
+.team-list .title {
   color: var(--title-text-color);
+}
+/*Подвал */
+.footer {
+  background-color: var(--black-bgc-color);
+}
+.address .link {
+  color: #ffffff;
+  opacity: 60%;
+}
+.address .link:hover,
+.address .link:focus {
+  color: var(--acsent-color);
+}
+
+.addres-text {
+  color: var(--text-white-color);
 }
