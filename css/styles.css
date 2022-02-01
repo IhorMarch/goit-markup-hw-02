@@ -17,6 +17,8 @@
 body {
   color: var(--primary-text-color);
   background-color: var(--background-color);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
 }
 .list {
   list-style: none;
@@ -29,18 +31,32 @@ body {
 /* site-nav стилизация меню */
 .logo {
   color: var(--acsent-color);
+  font-family: Raleway, sans-serif;
+
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1, 2;
 }
 .logo-footer {
   color: var(--text-white-color);
+  font-family: Raleway, sans-serif;
 }
 .logo-nav {
   color: var(--title-text-color);
+  font-family: Raleway, sans-serif;
 }
 .site-nav .link {
   color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1, 14;
+  letter-spacing: 0.02em;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
+  color: var(--acsent-color);
+}
+.site-nav .link.current {
   color: var(--acsent-color);
 }
 /* address-nav */
@@ -58,7 +74,7 @@ body {
 .hero-title {
   color: var(--text-white-color);
 }
-.button {
+.hero-button {
   color: var(--text-white-color);
   background-color: var(--acsent-color);
 }
@@ -83,8 +99,9 @@ body {
   background-color: var(--black-bgc-color);
 }
 .address .link {
-  color: #ffffff;
-  opacity: 60%;
+  color: rgba(255, 255, 255, 0.6);
+  /* color: #ffffff;
+  opacity: 60%; */
 }
 .address .link:hover,
 .address .link:focus {
@@ -93,4 +110,14 @@ body {
 
 .addres-text {
   color: var(--text-white-color);
+}
+/* ПОРТФОЛИО */
+.button {
+  color: var(--title-text-color);
+  background-color: var(--gray-bcg-color);
+}
+.button:hover,
+.button:focus {
+  color: var(--text-white-color);
+  background-color: var(--acsent-color);
 }
